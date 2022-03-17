@@ -1,0 +1,28 @@
+/**
+  Get current time Shell application inf
+**/
+
+[Defines]
+  INF_VERSION   = 0x00010006
+  BASE_NAME     = CurrentTimeShellC
+  FILE_GUID     = 2191c7d1-f852-4598-88f7-3d4c30a43671
+  MODULE_TYPE   = UEFI_APPLICATION
+  ENTRY_POINT   = ShellCEntryLib
+
+[Sources]
+  CurrentTimeShellC.c
+
+[Packages]
+  StdLib/StdLib.dec
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec
+
+[LibraryClasses]
+  ShellCEntryLib
+  LibC
+  LibStdio
+  UefiLib
+  DebugLib
+  UefiRuntimeServicesTableLib
+  UefiBootServicesTableLib
+

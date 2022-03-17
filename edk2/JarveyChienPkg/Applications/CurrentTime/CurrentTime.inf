@@ -1,0 +1,23 @@
+/**
+  Get current time application inf
+**/
+
+[Defines]
+  INF_VERSION   = 0x00010006
+  BASE_NAME     = CurrentTime
+  FILE_GUID     = 1417abea-e999-4a1b-b346-c220841183f4
+  MODULE_TYPE   = UEFI_APPLICATION
+  ENTRY_POINT   = UefiMain
+
+[Sources]
+  CurrentTime.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  DebugLib
+  UefiRuntimeServicesTableLib
+  UefiBootServicesTableLib

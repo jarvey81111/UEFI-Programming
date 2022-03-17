@@ -1,0 +1,15 @@
+## @file
+#   Declarations for the UDK Standard Libraries.
+#
+# Copyright (c) 2010 - 2012, Intel Corporation. All rights reserved.<BR>
+#
+# SPDX-License-Identifier: BSD-2-Clause-Patent
+##
+
+[Defines]
+  DEC_SPECIFICATION              = 0x00010005
+  PACKAGE_NAME                   = JarveyChienPkg
+  PACKAGE_GUID                   = dc55975c-52a5-495e-b3b2-15d1c336c9b6
+  PACKAGE_VERSION                = 0.01
+
+
